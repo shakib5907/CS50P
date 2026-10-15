@@ -12,4 +12,12 @@ The **print** function actually takes 3 parameters - print(\*objects, sep = ' ',
 
 **Escape sequence** - \" ... \" to use quotation mark
 
-**String Method** name = name.strip() - removes all the whitespaces from the string
+# String Methods
+
+name = name.strip() - removes all the whitespaces from the string
+name = name.capitalize() - Capitalize only the first letter
+name = name.title() - Title based Capitalization
+
+**Chaining Methods**
+
+name = name.strip().title()
