@@ -10,8 +10,6 @@
 
 The **print** function actually takes 3 parameters - print(\*objects, sep = ' ', end = '\n') -> end parameter is causing a new line everytime we use it. Making end = '' will allow us to use a print function but not going to a new line. sep = ' ' causes a separation in a line, works as a space. Making sep = '' will allow 2 or more variables or strings to be printed without space.
 
-**Escape sequence** - \" ... \" to use quotation mark
-
 # String Methods
 
 name = name.strip() - removes all the whitespaces from the string
