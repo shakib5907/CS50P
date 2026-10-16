@@ -1,9 +1,6 @@
-# Taking user input - comes as in string format, assinging it to a variable
-name = input("Enter your name : ")
+def Name():
+    name = input("Enter your name : ")
+    return name
 
-# Using the variable inside of the print function
-print("Hello, " + name)
-print("Hello,", name)
-print("Hello, ", end = '')
-print(name)
+name = Name()
 print(f"Hello, {name}")

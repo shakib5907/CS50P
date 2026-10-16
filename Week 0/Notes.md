@@ -21,3 +21,39 @@ name = name.title() - Title based Capitalization
 **Chaining Methods**
 
 name = name.strip().title()
+
+first, last = name.split(" ") - split the string on the basis of a whitespace
+
+if z = 1000, print(f"{z : ,}") - will output 1,000
+if z = 0.666666666, print(f"{z : .2f}") - will output 0.67 - 2 floating point digits
+
+# Defining Function
+
+def Hello(name = "World"):
+print(f"Hello, {name}")
+
+name = input("Enter your name : ")
+Hello(name)
+Hello()
+
+**A function must be defined before calling it**
+
+To avoid this conflict :
+
+def main():
+name = input("Enter your name : ")
+Hello(name)
+
+def Hello(name):
+print(f"Hello, {name}")
+
+main()
+
+# A function returning a value
+
+def Name():
+name = input("Enter your name : ")
+return name
+
+name = Name()
+print(f"Hello, {name}")
