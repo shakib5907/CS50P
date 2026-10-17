@@ -1,6 +1,6 @@
 def convert(message):
-    message = message.replace(":))", "hi")
-    message = message.replace(":((", "bye")
+    message = message.replace(":)", "hi")
+    message = message.replace(":(", "bye")
     return message
 
 def main():
