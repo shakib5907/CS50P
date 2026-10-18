@@ -7,7 +7,7 @@ For example
 name = input("Enter your name : ")
 
 match name:
-case "Harry":
+case "Harry" | "Hermione" | "Ron":
 print("Gryffindor!!")
 case "Draco":
 print("Slytherin)
