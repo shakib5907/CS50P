@@ -1,5 +1,5 @@
 def main():
-    time = input("What time is it now : ")
+    time = input("What time is it now : ").strip().lower()
     time = convert(time)
 
     if 7 <= time <= 8:
@@ -11,12 +11,20 @@ def main():
 
 
 def convert(time):
-    hour, minute = time.split(":")
+    hour, remaining = time.split(":")
     hour = float(hour)
-    minute = float(minute)
-    minute = (minute * 100) / 60
-    minute = minute / 100
-    return hour + minute
+    minute, format = remaining.split(" ")
+    if format == "p.m.":
+        minute = float(minute)
+        minute = (minute * 100) / 60
+        minute = minute / 100
+        hour = hour + 12
+        return hour + minute
+    elif format == "a.m.":
+            minute = float(minute)
+            minute = (minute * 100) / 60
+            minute = minute / 100
+            return hour + minute
 
 
 if __name__ == "__main__":
