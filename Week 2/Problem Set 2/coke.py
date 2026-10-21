@@ -6,4 +6,4 @@ while total < 50:
     if total < 50:
         print(f"Amount Due: {50 - total}")
 
-print(f"Change Due: {total - 50}")
+print(f"Change Owed: {total - 50}")
