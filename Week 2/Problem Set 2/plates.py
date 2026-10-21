@@ -8,20 +8,24 @@ def main():
 
 def is_valid(s):
     length = len(s)
-    if 2 <= s <= 6:
+    if 2 <= length <= 6:
         for c in s[0 : 2]:
             if c.isdigit():
                 return False
         for c in s:
-            if c.isnumeric():
-                None
+            if c.isalpha():
+                continue
             else:
-                return False
+                if c.isdigit():
+                    continue
+                else:
+                    return False
+        char = 0
         for c in s:
-            char = 0
             if c.isdigit():
                 if c == "0":
-                    return False
+                    if char == 0:
+                        return False
                 else:
                     char += 1
                     continue
