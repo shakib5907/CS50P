@@ -4,6 +4,8 @@ def is_consonent(character):
     character = character.lower()
     if character == "a" or character == "e" or character == "i" or character == "o" or character == "u":
         return False
+    else:
+        return True
 
     
 for c in message:
