@@ -5,6 +5,7 @@ def get_coin():
             return coin  
 
 total = 0
+print(f"Amount Due: {50 - total}")
 
 while total < 50:
     coin = get_coin()
